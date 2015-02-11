@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+echo "Starting shellcommands.sh vagrant provisioning script"
 
 echo "Updated apt-get"
 apt-get update
