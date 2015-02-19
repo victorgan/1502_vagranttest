@@ -17,7 +17,7 @@ git clone git://github.com/victorgan/.vim.git $HOME/.vim
 echo "source $HOME/.vim/vimrc" > $HOME/.vimrc
 
 echo "Customizing Bash Settings"
-echo "export TERM=xterm-256color" > $HOME/.bashrc
+echo "export TERM=xterm-256color" >> $HOME/.bashrc
 
 # ------------------------------
 # Python
