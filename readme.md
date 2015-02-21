@@ -1,8 +1,8 @@
-# Vagrant Test
+# Vagrant On a Windows Machine
 
 Following: https://docs.vagrantup.com/v2/getting-started/project_setup.html
 
-## Step 1: Install Git (Optional)
+## Step 1: Install Git
 
 For two reasons:
 1) So you have git on your host machine
@@ -10,6 +10,8 @@ For two reasons:
 installation: choose the option that adds Linux-style command line tools to your
 system Path. This isn't really necessary, because you can run your virtual
 machine from virtualbox.
+
+This will allow you t
 
 ## Step 2: Install Vagrant and Virtualbox
 

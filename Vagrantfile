@@ -13,7 +13,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.box_url = "https://atlas.hashicorp.com/ubuntu/boxes/trusty64"
 
+  # We'll need a way to access our webserver once it's provisioned, so we'll
+  # tell Vagrant to forward port 80 from our box to port 8080 on localhost. 
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+
   # Enable provisioning with a shell script. 
-  config.vm.provision :shell, path: "shellcommands.sh"
+  # config.vm.provision :shell, path: "shellcommands.sh"
+  config.vm.provision :ansible do |ansible|
+    ansible.playbook = "playbook.yml"
+  end
   
 end

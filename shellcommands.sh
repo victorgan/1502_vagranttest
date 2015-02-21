@@ -22,13 +22,13 @@ echo "export TERM=xterm-256color" >> $HOME/.bashrc
 # ------------------------------
 # Python
 # ------------------------------
-echo "Installing full SciPy Stack" # http://www.scipy.org/install.html
-sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-
+# echo "Installing full SciPy Stack" # http://www.scipy.org/install.html
+# sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+# 
 # echo "Install PIP"
 # wget https://bootstrap.pypa.io/get-pip.py -O - | python
 # pip install -U pip # upgrade pip
-
+# 
 # echo "Install Pillow (fork of PIL)"
 # pip install Pillow
 
